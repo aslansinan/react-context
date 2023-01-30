@@ -3,6 +3,7 @@ import {useContext} from 'react'
 import ThemeContext  from '../context/ThemeContext'
 import Button from './Button'
 import Header from './Header'
+import Profile from './Profile';
 
 
 function Container() {
@@ -10,8 +11,10 @@ function Container() {
   return (
     <div className={`app ${theme === 'dark' ? theme: ""}`}>
         <Header />
-        <hr />
+        <hr />  
         <Button />
+        <hr />
+        <Profile />
     </div>    
   );
 }
