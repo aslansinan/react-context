@@ -2,7 +2,7 @@ import { createContext, useState } from "react";
 
 const ThemeContext = createContext();
 
-export const ThemeProvider = ({ childeren }) => {
+export const ThemeProvider = ({ children }) => {
     const [theme, setTheme] = useState("dark");
 
     const values = {
@@ -11,7 +11,7 @@ export const ThemeProvider = ({ childeren }) => {
     };
 
     return (
-        <ThemeContext.Provider value={values}>{childeren}</ThemeContext.Provider>
+        <ThemeContext.Provider value={values}>{children}</ThemeContext.Provider>
     );
-}
+};
 export default ThemeContext;
